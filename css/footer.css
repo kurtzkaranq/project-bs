@@ -1,0 +1,58 @@
+footer {
+  background: url(../pics/footer/base.svg);
+}
+ul {
+  list-style-type: none;
+}
+footer a {
+  text-decoration: none;
+  color: aliceblue;
+}
+#footerTitle {
+  color: aliceblue;
+  font-size: 20px;
+}
+footer hr {
+  color: aliceblue;
+}
+.footerMenu {
+  /* margin-left: 15%; */
+  margin-right: 10%;
+}
+.contact {
+  margin-left: 5%;
+}
+.last {
+  margin-left: 20%;
+  justify-content: end;
+}
+.logo {
+  align-items: flex-start;
+}
+.mSocial {
+  margin-top: 5%;
+  margin-left: 35%;
+  /* justify-content: space-around; */
+}
+.mSocial img {
+  width: 25px;
+  height: 25px;
+}
+.info img {
+  align-self: start;
+}
+.contact li {
+  color: aliceblue;
+  width: 150%;
+}
+.footer-list {
+  margin-left: 15%;
+  margin-right: 10%;
+}
+.footer-list a {
+  width: 250%;
+}
+.copyright {
+  margin-right: 0%;
+  padding-right: 0%;
+}

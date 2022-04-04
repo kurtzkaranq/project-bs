@@ -1,0 +1,86 @@
+.logo {
+  width: 15%;
+  margin-left: 5%;
+  margin-top: 1%;
+}
+.logo h2 {
+  color: #f17228;
+  margin-top: auto;
+
+  width: 300%;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 700;
+}
+header {
+  margin-top: auto;
+}
+header a {
+  color: black;
+}
+
+.menuList {
+  list-style-type: none;
+  /* margin-top: 10px; */
+  align-items: center;
+  width: 50vw;
+}
+.menuList li {
+  margin-left: 3%;
+  margin-top: 2vh;
+  align-items: center;
+}
+.menuList li a {
+  margin-left: auto;
+
+  text-decoration: none;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.loginList {
+  list-style-type: none;
+}
+.loginList li {
+  margin-left: 3%;
+  margin-top: 6%;
+}
+.loginList li a {
+  margin-left: auto;
+  color: #f17228;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 500;
+}
+.bolded {
+  color: #f17228;
+}
+.searchBar input {
+  /* search */
+  padding-left: 25px;
+  background: url(../pics/header/search.svg);
+  background-repeat: no-repeat;
+  background-position: 4% 50%;
+
+  background-size: 15px;
+  position: relative;
+  /* width: 15vw; */
+  height: 32px;
+  margin-right: 5%;
+
+  border: 1px solid #fbc5a6;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+input {
+  border: none;
+  width: 235px;
+  height: 32px;
+}
+.mBar img {
+  width: 25px;
+}

@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mstars Food Delivery</title>
+  </head>
+  <body>
+    <header class="container-md pt-2 d-flex-wrap">
+      <div class="row d-md-flex justify-content-md-start">
+        <div class="col-4 logo justify-content-center order-1 order-md-0">
+          <div class="d-flex w-50 justify-content-center">
+            <img src="./pics/logo.svg" alt="" />
+            <h2 class="col-12">Food Delivery</h2>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="menu d-flex order-2 order-md-3">
+            <div class="dropdown show d-inline d-md-none ms-0">
+              <a
+                class="btn dropdown-toggle"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img src="./pics/header/more.svg" alt="" />
+              </a>
+            </div>
+            <!-- ---------------------- -->
+            <ul class="d-flex d-none d-md-flex menuList col-12">
+              <li>
+                <a href="#" class="bolded">НҮҮР</a>
+              </li>
+              <li>
+                <a href="#">ХООЛНЫ ЦЭС</a>
+              </li>
+              <li>
+                <a href="#">ХҮРГЭЛТИЙН БҮС</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-2 order-3 mt-3">
+          <div class="searchBar d-flex d-none d-lg-flex">
+            <div class="searchSection d-none d-md-inline">
+              <input type="text" value="" placeholder="Хайх" />
+            </div>
+          </div>
+        </div>
+        <div class="col order-4 ms-2">
+          <div class="login-basket">
+            <ul class="d-lg-flex loginList d-none">
+              <li class="">
+                <a href="#">
+                  <img src="./pics/header/bucket.svg" alt="" />
+                  Сагс
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./pics/header/user.svg" alt="" />
+                  Нэвтрэх</a
+                >
+              </li>
+            </ul>
+            <div class="d-flex d-lg-none mBar mt-2 mt-md-3">
+              <div class="searchIcon me-3">
+                <a href="#">
+                  <img src="./pics/header/search-icon.svg" alt="" />
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <img src="./pics/header/userIcon.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- BANNER -->
+    <div class="banner mt-2 d-none">
+      <div class="d-flex container-md justify-content-around">
+        <img src="./pics/meal-pic.svg" alt="" class="foodPic" />
+        <div class="mstarsFD my-md-auto ms-5 mt-5">
+          <h1 class="mstars-title">
+            MStars Food <br />
+            Delivery
+          </h1>
+          <hr class="d-none d-md-block" />
+          <p class="text mt-4 mt-md-none">
+            Хосгүй амтыг хормын дотор <br class="d-none d-lg -inline" />
+            хүргэж өгнө.
+          </p>
+        </div>
+        <!-- <div class="rightArrow d-none d-md-block">
+          <span id="rightArrow"> &#8594;</span>
+        </div> -->
+      </div>
+      <div class="slide">
+        <img src="./project_pics/slide.svg" alt="" />
+        <img src="./project_pics/slide2.svg" alt="" />
+        <img src="./project_pics/slide2.svg" alt="" />
+      </div>
+    </div>
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <div class="buttons">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+      </div>
+      <div class="carousel-inner">
+        <div
+          class="carousel-item active base-1 base d-flex justify-content-center"
+        >
+          <img src="./pics/meal-pic.svg" alt="" class="foodPic" />
+          <div class="mstarsFD">
+            <h1 class="mstars-title">
+              MStars Food <br />
+              Delivery
+            </h1>
+            <hr class="d-none d-md-block" />
+            <p class="text mt-md-none">
+              Хосгүй амтыг хормын дотор <br class="d-none d-lg -inline" />
+              хүргэж өгнө.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item base-2 base">
+          <div class="mstarsFD">
+            <h1 class="mstars-title">
+              MStars Food <br />
+              Delivery
+            </h1>
+            <hr class="d-none d-md-block" />
+            <p class="text mt-md-none">
+              Хосгүй амтыг хормын дотор <br class="d-none d-lg -inline" />
+              хүргэж өгнө.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item base-3 base">
+          <div class="mstarsFD">
+            <h1 class="mstars-title">
+              MStars Food <br />
+              Delivery
+            </h1>
+            <hr class="d-none d-md-block" />
+            <p class="text mt-md-none">
+              Хосгүй амтыг хормын дотор <br class="d-none d-lg -inline" />
+              хүргэж өгнө.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <main class="container-md">
+      <div class="container feature-container">
+        <div class="features">
+          <ul class="d-flex flex-column p-0 m-0 flex-md-row">
+            <li class="d-flex">
+              <img src="./pics/feature1.svg" alt="" />
+              <div>
+                <span> Шуурхай хүргэлт </span>
+                <p>30 минутанд таны гарт.</p>
+              </div>
+            </li>
+            <li class="d-flex">
+              <img src="./pics/feature2.svg" alt="" />
+              <div>
+                <span> Эрүүл, баталгаат орц </span>
+                <p>Хамгийн чанартайг танд.</p>
+              </div>
+            </li>
+            <li class="d-flex">
+              <img src="./pics/feature3.svg" alt="" />
+              <div>
+                <span> Өргөн сонголт </span>
+                <p>Хамгийн онцгойг танд.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- menu -->
+      <div class="menu-list">
+        <div class="menu-line">
+          <div class="menu-title"><span> Хямдралтай</span></div>
+        </div>
+        <div class="menu d-flex justify-content-around">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="./pics/menu-food/food1.svg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Зайрмаг</h5>
+              <p class="card-text d-flex">
+                <span class="saled">4,800₮</span>
+                <span class="declined">6,800₮</span>
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="./pics/menu-food/food2.svg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Панкейк</h5>
+              <p class="card-text d-flex">
+                <span class="saled">4,800₮</span>
+                <span class="declined">6,800₮</span>
+              </p>
+            </div>
+          </div>
+          <div class="card d-none d-md-block" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="./pics/menu-food/food3.svg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Өглөөний хоол</h5>
+              <p class="card-text d-flex">
+                <span class="saled">4,800₮</span>
+                <span class="declined">6,800₮</span>
+              </p>
+            </div>
+          </div>
+          <div class="card d-none d-md-block" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="./pics/menu-food/food4.svg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Банана сендвич</h5>
+              <p class="card-text d-flex">
+                <span class="saled">4,800₮</span>
+                <span class="declined">6,800₮</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-list">
+        <div class="d-block">
+          <div class="menu-title"><span>Үндсэн хоол</span></div>
+        </div>
+        <div class="menu d-flex justify-content-around">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="./pics/menu-food/food5.svg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Салмон загас</h5>
+              <p class="card-text">
+                <span class="saled">11,800₮</span>
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="./pics/menu-food/food6.svg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Бөөрөнхий мах</h5>
+              <p class="card-text">
+                <span class="saled">14,000₮</span>
+              </p>
+            </div>
+          </div>
+          <div class="card d-none d-md-block" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="./pics/menu-food/food7.svg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Самрын нухаш</h5>
+              <p class="card-text">
+                <span class="saled">9,800₮</span>
+              </p>
+            </div>
+          </div>
+          <div class="card d-none d-md-block" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="./pics/menu-food/food8.svg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Чикен бургер</h5>
+              <p class="card-text">
+                <span class="saled">14,000₮</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-list">
+        <div class="menu-title"><span>Салад ба зууш</span></div>
+        <div class="menu d-flex justify-content-around">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="./pics/menu-food/food9.svg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Детокс салад</h5>
+              <p class="card-text">
+                <span class="saled">6,800₮</span>
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="./pics/menu-food/food10.svg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Кобб салад</h5>
+              <p class="card-text">
+                <span class="saled">6,800₮</span>
+              </p>
+            </div>
+          </div>
+          <div class="card card d-none d-md-block" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="./pics/menu-food/food11.svg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Авокадо салад</h5>
+              <p class="card-text">
+                <span class="saled">6,800₮</span>
+              </p>
+            </div>
+          </div>
+          <div class="card card d-none d-md-block" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="./pics/menu-food/food12.svg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Сендвич</h5>
+              <p class="card-text">
+                <span class="saled">4,800₮</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-list desert">
+        <div class="menu-title mb-5"><span>Амттан</span></div>
+        <div class="menu d-flex justify-content-around">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="./pics/menu-food/food13.svg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Донатс</h5>
+              <p class="card-text">
+                <span class="saled">5,800₮</span>
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="./pics/menu-food/food14.svg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Орео дессерт</h5>
+              <p class="card-text">
+                <span class="saled">7,800₮</span>
+              </p>
+            </div>
+          </div>
+          <div class="card d-none d-md-block" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="./pics/menu-food/food15.svg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Вафли</h5>
+              <p class="card-text">
+                <span class="saled">5,800₮</span>
+              </p>
+            </div>
+          </div>
+          <div class="card d-none d-md-block" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="./pics/menu-food/food16.svg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Макарон</h5>
+              <p class="card-text">
+                <span class="saled">3,800₮</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="w-fluid mt-4">
+      <div class="container-sm p-2">
+        <div class="info d-flex flex-column flex-md-row">
+          <!-- FOOD DELIVERY / HOME LOGO -->
+          <div class="title d-flex w-25">
+            <img src="./pics/footer/footer-logo.svg" class="logo" alt="" />
+            <h2 id="footerTitle" class="ms-2 col-12">Food Delivery</h2>
+          </div>
+          <!-- FOOTER MENU -->
+          <div class="d-flex justify-content-between ms-0">
+            <div class="footerMenu">
+              <ul>
+                <li><a href="#">Нүүр</a></li>
+                <li><a href="#">Хоолны цэс</a></li>
+                <li>
+                  <a href="./project/deliveryZone.html">Хүргэлтийн бүс</a>
+                </li>
+              </ul>
+            </div>
+            <!-- CONTACT -->
+            <div class="contact">
+              <ul>
+                <li><a href="#">Холбоо барих</a></li>
+                <li>(976) 123456789</li>
+                <li>(976) 987654321</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="justify-content-center d-md-none mSocial">
+          <div class="img d-flex ms-2">
+            <a href="#" class="ms-2"
+              ><img src="../pics/footer/social logos/facebook.png" alt="" />
+            </a>
+            <a href="#" class="ms-2">
+              <img src="../pics/footer/social logos/instagram.png" alt="" />
+            </a>
+            <a href="#" class="ms-2">
+              <img src="../pics/footer/social logos/twitter.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <hr />
+        <div class="bottom d-flex">
+          <div class="social d-flex-column d-none d-md-inline">
+            Бидэнтэй нэгдээрэй
+            <div class="img d-flex ms-2">
+              <a href="#" class="ms-2"
+                ><img src="../pics/footer/social logos/facebook.png" alt="" />
+              </a>
+              <a href="#" class="ms-2">
+                <img src="../pics/footer/social logos/instagram.png" alt="" />
+              </a>
+              <a href="#" class="ms-2">
+                <img src="../pics/footer/social logos/twitter.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <!-- copyright etc. -->
+          <div class="last d-flex flex-column flex-md-row m-0">
+            <div class="footer-list">
+              <a href="#" class="mb-2">Үйлчилгээний нөхцөл</a>
+              <a href="#" class="mb-2">Нууцлалын бодлого</a>
+            </div>
+            <div class="copyright">
+              © 2020 MStars Foods LLC
+              <br />
+              <span class="d-none d-md-inline">
+                Зохиогчийн эрх хуулиар хамгаалагдсан.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
