@@ -10,15 +10,16 @@
   background-repeat: repeat;
   justify-self: center;
 }
+
 .mstars-title {
   font-family: " Poppins";
   font-size: 55px;
   font-weight: 600;
-  line-height: 3vh;
+  line-height: 5vh;
   letter-spacing: 0.01em;
   text-align: right;
   color: #f17228;
-  margin-top: 15%;
+  /* margin-top: 15%; */
   margin-right: 15%;
   padding-top: 5%;
 }
@@ -37,7 +38,7 @@
   /* padding-top: 2%; */
 }
 .base {
-  height: 40vh;
+  height: 30vh;
   width: 100%;
   background-size: 100vw;
   background-position-x: center;
@@ -58,7 +59,7 @@
 @media (max-width: 768px) {
   .foodPic {
     padding-right: 0%;
-    margin-left: 40% !important;
+    /* margin-left: 40% !important; */
     width: 150px !important;
   }
 }
