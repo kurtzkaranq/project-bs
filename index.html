@@ -79,10 +79,45 @@
           <div class="login-basket">
             <ul class="d-lg-flex loginList d-none">
               <li class="">
-                <a href="#">
+                <a
+                  class="btn"
+                  data-bs-toggle="offcanvas"
+                  href="#offcanvasRight"
+                  role="button"
+                  aria-controls="offcanvasExample"
+                >
                   <img src="./pics/header/bucket.svg" alt="" />
                   Сагс
                 </a>
+
+                <div
+                  class="offcanvas offcanvas-end"
+                  tabindex="-1"
+                  id="offcanvasRight"
+                  aria-labelledby="offcanvasRightLabel"
+                >
+                  <div class="offcanvas-header">
+                    <h5
+                      id="offcanvasRightLabel"
+                      class="text-center justify-content-center"
+                    >
+                      Таны сагс
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close text-reset"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <img
+                      src="./pics/basket-pic.svg"
+                      alt=""
+                      class="align-items-center"
+                    />
+                  </div>
+                </div>
               </li>
               <li>
                 <a href="#">
@@ -178,32 +213,6 @@
             </p>
           </div>
         </div>
-        <!-- <div class="carousel-item base-2 base">
-          <div class="mstarsFD">
-            <h1 class="mstars-title">
-              MStars Food <br />
-              Delivery
-            </h1>
-            <hr class="d-none d-md-block" />
-            <p class="text mt-md-none">
-              Хосгүй амтыг хормын дотор <br class="d-none d-lg -inline" />
-              хүргэж өгнө.
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item base-3 base">
-          <div class="mstarsFD">
-            <h1 class="mstars-title">
-              MStars Food <br />
-              Delivery
-            </h1>
-            <hr class="d-none d-md-block" />
-            <p class="text mt-md-none">
-              Хосгүй амтыг хормын дотор <br class="d-none d-lg -inline" />
-              хүргэж өгнө.
-            </p>
-          </div>
-        </div> -->
       </div>
       <button
         class="carousel-control-prev"
