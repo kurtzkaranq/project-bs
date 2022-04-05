@@ -21,14 +21,15 @@
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/menu.css" />
     <link rel="stylesheet" href="../css/footer.css" />
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/signUp.css" />
+    <link rel="stylesheet" href="../css/forgot-pass.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>Menu</title>
+    <title>User profile</title>
   </head>
   <body>
     <header class="container-md pt-2 d-flex-wrap">
@@ -109,30 +110,24 @@
       </div>
     </header>
     <main class="container-md">
-      <form action="login" title="login">
-      <div class="login">
-        <div class="loginTitle">
-          <h2>Нэвтрэх</h2>
+      <div class="signUp">
+        <div class="forgot-title">
+          <h2>Хэрэглэгч</h2>
         </div>
-        <div class="email">
-          <span>И-мэйл </span>
-          <input type="email" />
-          <span>Нууц үг</span>
-          <input type="password"/>
+        <div class="info d-flex flex-column">
+          <span>Нэр</span>
+
+          <input type="text" value="Нэрээ оруулна уу." />
         </div>
-        <div class="forgotPass">
-          <a href="./forgotPass.html">Нууц үгээ мартсан?</a>
+        <div class="info d-flex flex-column">
+          <span>Утасны дугаар</span>
+
+          <input type="number" value="Дугаараа оруулна уу." />
         </div>
+
         <div class="entry">
-          <button id="entry">Нэвтрэх</button>
+          <a href="../index.html"> <button id="entry">Хадгалах</button></a>
         </div>
-        <span id="or"> эсвэл</span>
-        <div class="sign">
-          <a href="./signUp.html">
-          <input type="button" name="signUp" id="signUp" value="Бүртгүүлэх">
-        </a>
-        </div>
-      </form>
       </div>
     </main>
     <footer class="w-fluid mt-4">

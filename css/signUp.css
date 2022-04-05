@@ -1,0 +1,131 @@
+main {
+  height: 78vh;
+  padding-top: 5vh;
+}
+.signUp {
+  position: relative;
+  width: 384px;
+  height: 440px;
+  margin: auto;
+}
+.signTitle {
+  /* line */
+
+  position: relative;
+  width: 9px;
+  height: 32px;
+  left: 0px;
+  top: 0px;
+
+  /* Primary */
+
+  background: #f17228;
+}
+.signTitle h2 {
+  position: relative;
+  margin-left: 15px;
+  padding-top: 4px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 140%;
+}
+.condition {
+  /* condition */
+  margin-top: 10%;
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+.condition span {
+  /* Үйлчилгээний нөхцөл зөвшөөрөх */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 140%;
+  /* identical to box height, or 17px */
+
+  display: flex;
+  align-items: center;
+
+  /* Primary */
+
+  color: #f17228;
+}
+.condition input {
+  box-sizing: border-box;
+  appearance: none;
+  background: white;
+  outline: 2px solid #f17228;
+  /* border: 3px solid #f17228; */
+  border-radius: 5px;
+  width: 16px;
+  height: 16px;
+}
+.info input {
+  background: #ffffff;
+  /* shade */
+  width: 100%;
+  border: 1px solid #ffd7bf;
+  box-sizing: border-box;
+  border-radius: 16px;
+  /* text-align: center; */
+  padding-left: 5%;
+  color: #b5b5b5;
+  margin-top: 4%;
+}
+.info span {
+  margin-top: 3%;
+}
+#entry {
+  background-color: #f17228;
+  border: none;
+  /* color: #ffffff; */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.entry {
+  /* login */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 0px;
+  margin-top: 35px;
+  color: #ffffff;
+
+  position: relative;
+  /* width: 359px;
+  height: 48px;
+  left: 528px;
+  top: 408px; */
+
+  background: #f17228;
+  border-radius: 20px;
+}
+@media (max-width: 770px) {
+  h2 {
+    color: #f17228;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,64 @@
+main {
+  padding-top: 5%;
+  height: 90%;
+}
+.foodTypes ul {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  /* margin-right: 5%; */
+  /* padding-top: 5%; */
+  padding: 0%;
+}
+.foodTypes ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* margin: auto; */
+  width: 32%;
+  /* padding: ; */
+  margin-left: 2%;
+  background: #ffffff;
+
+  border: 1px solid #fbc5a6;
+  box-sizing: border-box;
+  border-radius: 20px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+
+  color: #171717;
+}
+.lists {
+  margin-top: 3%;
+}
+.tapped {
+  background-color: #f17228 !important;
+  color: #ffffff !important;
+}
+@media (min-width: 770px) {
+  main {
+    height: 78vh;
+  }
+  .lists {
+    margin: 0%;
+    padding: 0%;
+    width: 50%;
+    margin-top: 5%;
+  }
+  .foodTypes ul li {
+    font-size: 20px;
+    height: 30px;
+    /* margin-bottom: 0% !important; */
+    /* padding: ; */
+  }
+  .foodTypes ul {
+    margin-bottom: 0%;
+  }
+}
