@@ -1,0 +1,28 @@
+select {
+  margin-top: 10px;
+}
+.form-select {
+  border-radius: 30px;
+  border: 1px solid #c4c4c4;
+  height: 3vh;
+}
+input {
+  border: 1px solid #c4c4c4;
+  border-radius: 20px;
+  width: 100%;
+  padding-left: 3%;
+}
+#addition {
+  height: 10vh;
+  border: 1px solid #c4c4c4;
+  border-radius: 20px;
+  width: 100%;
+  /* align-items: baseline; */
+  text-align: left start;
+  padding-bottom: 13%;
+  padding-left: 3%;
+}
+.radio {
+  height: 15px;
+  margin-right: 0;
+}

@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/menu.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/login.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -120,10 +121,89 @@
                 </div>
               </li>
               <li>
-                <a href="#">
-                  <img src="./pics/header/user.svg" alt="" />
-                  Нэвтрэх</a
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 >
+                  <a href="#">
+                    <img src="./pics/header/user.svg" alt="" />
+                    Нэвтрэх</a
+                  >
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content head-modal">
+                      <div class="modal-body head-modal-body mt-2 me-2 pe-4">
+                        <div class="d-flex justify-content-between mb-2">
+                          <div class="modal-title">
+                            <h5 class="" id="exampleModalLabel">Нэвтрэх</h5>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div>
+                          <div class="d-flex flex-column mt-2">
+                            И-мэйл
+                            <input
+                              type="email"
+                              name=""
+                              id=""
+                              placeholder="И-мэйл хаягаа оруулна уу.  "
+                            />
+                          </div>
+                          <div class="d-flex flex-column mt-2">
+                            Нууц үг
+                            <input
+                              type="password"
+                              name=""
+                              id=""
+                              placeholder="Нууц үгээ оруулна уу."
+                            />
+                          </div>
+                          <div>
+                            <a href="#" class="d-flex justify-content-end mt-2"
+                              >Нууц үгээ мартсан?</a
+                            >
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column mt-3">
+                          <button
+                            type="button"
+                            class="btn foot-btn-1"
+                            data-bs-dismiss="modal"
+                          >
+                            Нэвтрэх
+                          </button>
+                          <div class="text-center">
+                            <a
+                              href="#"
+                              class="justify-content-center text-center"
+                              >эсвэл</a
+                            >
+                          </div>
+                          <button type="button " class="btn foot-btn-2">
+                            Бүртгүүлэх
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </li>
             </ul>
             <div class="d-flex d-lg-none mBar mt-2 mt-md-3">
@@ -265,93 +345,327 @@
       <div class="menu-list">
         <div class="menu-line d-flex justify-content-between mb-2">
           <div class="menu-title"><span> Хямдралтай</span></div>
-          <div class="me-5 see-more">
-            Бүгдийг харах
+          <div class="me-5 d-flex see-more">
+            <a href="./projects/menu.html">
+              <span class="ms-3"> Бүгдийг харах </span>
+              <img
+                src="./pics/icon/right-arrow.svg"
+                alt=""
+                class="arrow ms-3"
+              />
+            </a>
           </div>
         </div>
         <div class="menu d-flex justify-content-around">
-          <div class="card" style="width: 18rem">
-            <div class="d-flex flex-row-reverse">
+          <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#foodModal"
+          >
+            <a href="#">
+              <div class="card1">
+                <div class="hovver">
+                  <img src="./pics/icon/basket-hover.svg" alt="" />
+                </div>
 
-              <img
-              class="card-img-top"
-              src="./pics/menu-food/food1.svg"
-              alt="Card image cap"
-              />
-              <div class="position-absolute sale-percent">
-                20%
-                
+                <div class="card" style="width: 18rem">
+                  <div class="d-flex flex-row-reverse">
+                    <img
+                      class="card-img-top"
+                      src="./pics/menu-food/food1.svg"
+                      alt="Card image cap"
+                    />
+                    <div class="position-absolute sale-percent">20%</div>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title d-flex justify-content-start ms-0">
+                      Зайрмаг
+                    </h5>
+                    <p class="card-text d-flex">
+                      <span class="saled">4,800₮</span>
+                      <span class="declined">6,800₮</span>
+                    </p>
+                  </div>
+                </div>
+              </div></a
+            >
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="foodModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content" id="modal">
+                <div class="modal-body w-100 p-5">
+                  <div class="d-flex w-auto">
+                    <div class="col-6">
+                      <img src="./pics/modal-pic.svg" alt="" />
+                    </div>
+                    <div class="col-6">
+                      <div class="d-flex justify-content-between">
+                        <span class="food-name"> Хулууны зутан </span>
+                        <span class="food-price"> 6,800₮ </span>
+                      </div>
+                      <hr />
+                      <div class="food-modal-info">
+                        <span> Орц </span>
+                        <p>
+                          Хулуу, төмс, лууван , сонгино, цөцгийн тос, самрын үр
+                        </p>
+                        <div class="d-flex flex-column">
+                          <span> Тоо </span>
+                          <div class="d-flex mt-2">
+                            <img src="./pics/minus-icon.svg" alt="" />
+                            <img src="./pics/1.svg" alt="" />
+                            <img src="./pics/plus-icon.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <button class="basket-button">Сагслах</button>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-              <div class="card-body">
-              <h5 class="card-title">Зайрмаг</h5>
-              <p class="card-text d-flex">
-                <span class="saled">4,800₮</span>
-                <span class="declined">6,800₮</span>
-              </p>
             </div>
           </div>
-          <div class="card" style="width: 18rem">
-            <div class="d-flex flex-row-reverse">
 
-              <img
-              class="card-img-top"
-              src="./pics/menu-food/food2.svg"
-              alt="Card image cap"
-              />
-              <div class="position-absolute sale-percent">
-                20%
-                
+          <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#foodModal"
+          >
+            <a href="#">
+              <div class="card1">
+                <div class="hovver">
+                  <img src="./pics/icon/basket-hover.svg" alt="" />
+                </div>
+
+                <div class="card" style="width: 18rem">
+                  <div class="d-flex flex-row-reverse">
+                    <img
+                      class="card-img-top"
+                      src="./pics/menu-food/food2.svg"
+                      alt="Card image cap"
+                    />
+                    <div class="position-absolute sale-percent">20%</div>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title d-flex justify-content-start ms-0">
+                      Панкейк
+                    </h5>
+                    <p class="card-text d-flex">
+                      <span class="saled">4,800₮</span>
+                      <span class="declined">6,800₮</span>
+                    </p>
+                  </div>
+                </div>
+              </div></a
+            >
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="foodModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content" id="modal">
+                <div class="modal-body w-100 p-5">
+                  <div class="d-flex w-auto">
+                    <div class="col-6">
+                      <img src="./pics/modal-pic.svg" alt="" />
+                    </div>
+                    <div class="col-6">
+                      <div class="d-flex justify-content-between">
+                        <span class="food-name"> Хулууны зутан </span>
+                        <span class="food-price"> 6,800₮ </span>
+                      </div>
+                      <hr />
+                      <div class="food-modal-info">
+                        <span> Орц </span>
+                        <p>
+                          Хулуу, төмс, лууван , сонгино, цөцгийн тос, самрын үр
+                        </p>
+                        <div class="d-flex flex-column">
+                          <span> Тоо </span>
+                          <div class="d-flex mt-2">
+                            <img src="./pics/minus-icon.svg" alt="" />
+                            <img src="./pics/1.svg" alt="" />
+                            <img src="./pics/plus-icon.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <button class="basket-button">Сагслах</button>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Панкейк</h5>
-              <p class="card-text d-flex">
-                <span class="saled">4,800₮</span>
-                <span class="declined">6,800₮</span>
-              </p>
             </div>
           </div>
-          <div class="card d-none d-md-block" style="width: 18rem">
-            <div class="d-flex flex-row-reverse">
 
-              <img
-              class="card-img-top"
-              src="./pics/menu-food/food3.svg"
-              alt="Card image cap"
-              />
-              <div class="position-absolute sale-percent">
-                20%
-                
+          <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#foodModal"
+          >
+            <a href="#">
+              <div class="card1">
+                <div class="hovver">
+                  <img src="./pics/icon/basket-hover.svg" alt="" />
+                </div>
+
+                <div class="card" style="width: 18rem">
+                  <div class="d-flex flex-row-reverse">
+                    <img
+                      class="card-img-top"
+                      src="./pics/menu-food/food3.svg"
+                      alt="Card image cap"
+                    />
+                    <div class="position-absolute sale-percent">20%</div>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title d-flex justify-content-start ms-0">
+                      Өглөөний хоол
+                    </h5>
+                    <p class="card-text d-flex">
+                      <span class="saled">4,800₮</span>
+                      <span class="declined">6,800₮</span>
+                    </p>
+                  </div>
+                </div>
+              </div></a
+            >
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="foodModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content" id="modal">
+                <div class="modal-body w-100 p-5">
+                  <div class="d-flex w-auto">
+                    <div class="col-6">
+                      <img src="./pics/modal-pic.svg" alt="" />
+                    </div>
+                    <div class="col-6">
+                      <div class="d-flex justify-content-between">
+                        <span class="food-name"> Хулууны зутан </span>
+                        <span class="food-price"> 6,800₮ </span>
+                      </div>
+                      <hr />
+                      <div class="food-modal-info">
+                        <span> Орц </span>
+                        <p>
+                          Хулуу, төмс, лууван , сонгино, цөцгийн тос, самрын үр
+                        </p>
+                        <div class="d-flex flex-column">
+                          <span> Тоо </span>
+                          <div class="d-flex mt-2">
+                            <img src="./pics/minus-icon.svg" alt="" />
+                            <img src="./pics/1.svg" alt="" />
+                            <img src="./pics/plus-icon.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <button class="basket-button">Сагслах</button>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Өглөөний хоол</h5>
-              <p class="card-text d-flex">
-                <span class="saled">4,800₮</span>
-                <span class="declined">6,800₮</span>
-              </p>
             </div>
           </div>
-          <div class="card d-none d-md-block" style="width: 18rem">
-            <div class="d-flex flex-row-reverse">
 
-              <img
-              class="card-img-top"
-              src="./pics/menu-food/food4.svg"
-              alt="Card image cap"
-              />
-              <div class="position-absolute sale-percent">
-                20%
-                
+          <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#foodModal"
+          >
+            <a href="#">
+              <div class="card1">
+                <div class="hovver">
+                  <img src="./pics/icon/basket-hover.svg" alt="" />
+                </div>
+
+                <div class="card" style="width: 18rem">
+                  <div class="d-flex flex-row-reverse">
+                    <img
+                      class="card-img-top"
+                      src="./pics/menu-food/food4.svg"
+                      alt="Card image cap"
+                    />
+                    <div class="position-absolute sale-percent">20%</div>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title d-flex justify-content-start ms-0">
+                      Банана сендвич
+                    </h5>
+                    <p class="card-text d-flex">
+                      <span class="saled">4,800₮</span>
+                      <span class="declined">6,800₮</span>
+                    </p>
+                  </div>
+                </div>
+              </div></a
+            >
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="foodModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content" id="modal">
+                <div class="modal-body w-100 p-5">
+                  <div class="d-flex w-auto">
+                    <div class="col-6">
+                      <img src="./pics/modal-pic.svg" alt="" />
+                    </div>
+                    <div class="col-6">
+                      <div class="d-flex justify-content-between">
+                        <span class="food-name"> Хулууны зутан </span>
+                        <span class="food-price"> 6,800₮ </span>
+                      </div>
+                      <hr />
+                      <div class="food-modal-info">
+                        <span> Орц </span>
+                        <p>
+                          Хулуу, төмс, лууван , сонгино, цөцгийн тос, самрын үр
+                        </p>
+                        <div class="d-flex flex-column">
+                          <span> Тоо </span>
+                          <div class="d-flex mt-2">
+                            <img src="./pics/minus-icon.svg" alt="" />
+                            <img src="./pics/1.svg" alt="" />
+                            <img src="./pics/plus-icon.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <button class="basket-button">Сагслах</button>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Банана сендвич</h5>
-              <p class="card-text d-flex">
-                <span class="saled">4,800₮</span>
-                <span class="declined">6,800₮</span>
-              </p>
             </div>
           </div>
         </div>
@@ -360,186 +674,958 @@
         <div class="d-block">
           <div class="menu-line d-flex justify-content-between mb-2">
             <div class="menu-title"><span> Үндсэн хоол</span></div>
-            <div class="me-5 see-more">
-              Бүгдийг харах
+            <div class="me-5 d-flex see-more">
+              <a href="./projects/menu.html">
+                <span class="ms-3"> Бүгдийг харах </span>
+                <img
+                  src="./pics/icon/right-arrow.svg"
+                  alt=""
+                  class="arrow ms-3"
+                />
+              </a>
             </div>
           </div>
         </div>
         <div class="menu d-flex justify-content-around">
-          <div class="card" style="width: 18rem">
-            <img
-              class="card-img-top"
-              src="./pics/menu-food/food5.svg"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Салмон загас</h5>
-              <p class="card-text">
-                <span class="saled">11,800₮</span>
-              </p>
+          <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#foodModal"
+          >
+            <a href="#">
+              <div class="card1">
+                <div class="hovver">
+                  <img src="./pics/icon/basket-hover.svg" alt="" />
+                </div>
+
+                <div class="card" style="width: 18rem">
+                  <div class="d-flex flex-row-reverse">
+                    <img
+                      class="card-img-top"
+                      src="./pics/menu-food/food5.svg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title d-flex justify-content-start ms-0">
+                      Салмон загас
+                    </h5>
+                    <p class="card-text d-flex">
+                      <span class="saled">11,800₮</span>
+                    </p>
+                  </div>
+                </div>
+              </div></a
+            >
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="foodModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content" id="modal">
+                <div class="modal-body w-100 p-5">
+                  <div class="d-flex w-auto">
+                    <div class="col-6">
+                      <img src="./pics/modal-pic.svg" alt="" />
+                    </div>
+                    <div class="col-6">
+                      <div class="d-flex justify-content-between">
+                        <span class="food-name"> Хулууны зутан </span>
+                        <span class="food-price"> 6,800₮ </span>
+                      </div>
+                      <hr />
+                      <div class="food-modal-info">
+                        <span> Орц </span>
+                        <p>
+                          Хулуу, төмс, лууван , сонгино, цөцгийн тос, самрын үр
+                        </p>
+                        <div class="d-flex flex-column">
+                          <span> Тоо </span>
+                          <div class="d-flex mt-2">
+                            <img src="./pics/minus-icon.svg" alt="" />
+                            <img src="./pics/1.svg" alt="" />
+                            <img src="./pics/plus-icon.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <button class="basket-button">Сагслах</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="card" style="width: 18rem">
-            <img
-              class="card-img-top"
-              src="./pics/menu-food/food6.svg"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Бөөрөнхий мах</h5>
-              <p class="card-text">
-                <span class="saled">14,000₮</span>
-              </p>
+
+          <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#foodModal"
+          >
+            <a href="#">
+              <div class="card1">
+                <div class="hovver">
+                  <img src="./pics/icon/basket-hover.svg" alt="" />
+                </div>
+
+                <div class="card" style="width: 18rem">
+                  <div class="d-flex flex-row-reverse">
+                    <img
+                      class="card-img-top"
+                      src="./pics/menu-food/food6.svg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title d-flex justify-content-start ms-0">
+                      Бөөрөнхий мах
+                    </h5>
+                    <p class="card-text d-flex">
+                      <span class="saled">14,000₮</span>
+                    </p>
+                  </div>
+                </div>
+              </div></a
+            >
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="foodModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content" id="modal">
+                <div class="modal-body w-100 p-5">
+                  <div class="d-flex w-auto">
+                    <div class="col-6">
+                      <img src="./pics/modal-pic.svg" alt="" />
+                    </div>
+                    <div class="col-6">
+                      <div class="d-flex justify-content-between">
+                        <span class="food-name"> Хулууны зутан </span>
+                        <span class="food-price"> 6,800₮ </span>
+                      </div>
+                      <hr />
+                      <div class="food-modal-info">
+                        <span> Орц </span>
+                        <p>
+                          Хулуу, төмс, лууван , сонгино, цөцгийн тос, самрын үр
+                        </p>
+                        <div class="d-flex flex-column">
+                          <span> Тоо </span>
+                          <div class="d-flex mt-2">
+                            <img src="./pics/minus-icon.svg" alt="" />
+                            <img src="./pics/1.svg" alt="" />
+                            <img src="./pics/plus-icon.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <button class="basket-button">Сагслах</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="card d-none d-md-block" style="width: 18rem">
-            <img
-              class="card-img-top"
-              src="./pics/menu-food/food7.svg"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Самрын нухаш</h5>
-              <p class="card-text">
-                <span class="saled">9,800₮</span>
-              </p>
+
+          <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#foodModal"
+          >
+            <a href="#">
+              <div class="card1">
+                <div class="hovver">
+                  <img src="./pics/icon/basket-hover.svg" alt="" />
+                </div>
+
+                <div class="card" style="width: 18rem">
+                  <div class="d-flex flex-row-reverse">
+                    <img
+                      class="card-img-top"
+                      src="./pics/menu-food/food7.svg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title d-flex justify-content-start ms-0">
+                      Самрын нухаш
+                    </h5>
+                    <p class="card-text d-flex">
+                      <span class="saled">9,800₮</span>
+                    </p>
+                  </div>
+                </div>
+              </div></a
+            >
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="foodModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content" id="modal">
+                <div class="modal-body w-100 p-5">
+                  <div class="d-flex w-auto">
+                    <div class="col-6">
+                      <img src="./pics/modal-pic.svg" alt="" />
+                    </div>
+                    <div class="col-6">
+                      <div class="d-flex justify-content-between">
+                        <span class="food-name"> Хулууны зутан </span>
+                        <span class="food-price"> 6,800₮ </span>
+                      </div>
+                      <hr />
+                      <div class="food-modal-info">
+                        <span> Орц </span>
+                        <p>
+                          Хулуу, төмс, лууван , сонгино, цөцгийн тос, самрын үр
+                        </p>
+                        <div class="d-flex flex-column">
+                          <span> Тоо </span>
+                          <div class="d-flex mt-2">
+                            <img src="./pics/minus-icon.svg" alt="" />
+                            <img src="./pics/1.svg" alt="" />
+                            <img src="./pics/plus-icon.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <button class="basket-button">Сагслах</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="card d-none d-md-block" style="width: 18rem">
-            <img
-              class="card-img-top"
-              src="./pics/menu-food/food8.svg"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Чикен бургер</h5>
-              <p class="card-text">
-                <span class="saled">14,000₮</span>
-              </p>
+
+          <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#foodModal"
+          >
+            <a href="#">
+              <div class="card1">
+                <div class="hovver">
+                  <img src="./pics/icon/basket-hover.svg" alt="" />
+                </div>
+
+                <div class="card" style="width: 18rem">
+                  <div class="d-flex flex-row-reverse">
+                    <img
+                      class="card-img-top"
+                      src="./pics/menu-food/food8.svg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title d-flex justify-content-start ms-0">
+                      Чикен бургер
+                    </h5>
+                    <p class="card-text d-flex">
+                      <span class="saled">14,000₮</span>
+                    </p>
+                  </div>
+                </div>
+              </div></a
+            >
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="foodModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content" id="modal">
+                <div class="modal-body w-100 p-5">
+                  <div class="d-flex w-auto">
+                    <div class="col-6">
+                      <img src="./pics/modal-pic.svg" alt="" />
+                    </div>
+                    <div class="col-6">
+                      <div class="d-flex justify-content-between">
+                        <span class="food-name"> Хулууны зутан </span>
+                        <span class="food-price"> 6,800₮ </span>
+                      </div>
+                      <hr />
+                      <div class="food-modal-info">
+                        <span> Орц </span>
+                        <p>
+                          Хулуу, төмс, лууван , сонгино, цөцгийн тос, самрын үр
+                        </p>
+                        <div class="d-flex flex-column">
+                          <span> Тоо </span>
+                          <div class="d-flex mt-2">
+                            <img src="./pics/minus-icon.svg" alt="" />
+                            <img src="./pics/1.svg" alt="" />
+                            <img src="./pics/plus-icon.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <button class="basket-button">Сагслах</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="menu-list">
-        <div class="menu-line d-flex justify-content-between mb-2">
-          <div class="menu-title"><span> Салад ба зууш</span></div>
-          <div class="me-5 see-more">
-            Бүгдийг харах
+        <div class="d-block">
+          <div class="menu-line d-flex justify-content-between mb-2">
+            <div class="menu-title"><span> Салад ба зууш</span></div>
+            <div class="me-5 d-flex see-more">
+              <a href="./projects/menu.html">
+                <span class="ms-3"> Бүгдийг харах </span>
+                <img
+                  src="./pics/icon/right-arrow.svg"
+                  alt=""
+                  class="arrow ms-3"
+                />
+              </a>
+            </div>
           </div>
         </div>
         <div class="menu d-flex justify-content-around">
-          <div class="card" style="width: 18rem">
-            <img
-              class="card-img-top"
-              src="./pics/menu-food/food9.svg"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Детокс салад</h5>
-              <p class="card-text">
-                <span class="saled">6,800₮</span>
-              </p>
+          <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#foodModal"
+          >
+            <a href="#">
+              <div class="card1">
+                <div class="hovver">
+                  <img src="./pics/icon/basket-hover.svg" alt="" />
+                </div>
+
+                <div class="card" style="width: 18rem">
+                  <div class="d-flex flex-row-reverse">
+                    <img
+                      class="card-img-top"
+                      src="./pics/menu-food/food9.svg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title d-flex justify-content-start ms-0">
+                      Детокс салад
+                    </h5>
+                    <p class="card-text d-flex">
+                      <span class="saled">6,800₮</span>
+                    </p>
+                  </div>
+                </div>
+              </div></a
+            >
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="foodModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content" id="modal">
+                <div class="modal-body w-100 p-5">
+                  <div class="d-flex w-auto">
+                    <div class="col-6">
+                      <img src="./pics/modal-pic.svg" alt="" />
+                    </div>
+                    <div class="col-6">
+                      <div class="d-flex justify-content-between">
+                        <span class="food-name"> Хулууны зутан </span>
+                        <span class="food-price"> 6,800₮ </span>
+                      </div>
+                      <hr />
+                      <div class="food-modal-info">
+                        <span> Орц </span>
+                        <p>
+                          Хулуу, төмс, лууван , сонгино, цөцгийн тос, самрын үр
+                        </p>
+                        <div class="d-flex flex-column">
+                          <span> Тоо </span>
+                          <div class="d-flex mt-2">
+                            <img src="./pics/minus-icon.svg" alt="" />
+                            <img src="./pics/1.svg" alt="" />
+                            <img src="./pics/plus-icon.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <button class="basket-button">Сагслах</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="card" style="width: 18rem">
-            <img
-              class="card-img-top"
-              src="./pics/menu-food/food10.svg"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Кобб салад</h5>
-              <p class="card-text">
-                <span class="saled">6,800₮</span>
-              </p>
+          <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#foodModal"
+          >
+            <a href="#">
+              <div class="card1">
+                <div class="hovver">
+                  <img src="./pics/icon/basket-hover.svg" alt="" />
+                </div>
+
+                <div class="card" style="width: 18rem">
+                  <div class="d-flex flex-row-reverse">
+                    <img
+                      class="card-img-top"
+                      src="./pics/menu-food/food10.svg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title d-flex justify-content-start ms-0">
+                      Кобб салад
+                    </h5>
+                    <p class="card-text d-flex">
+                      <span class="saled">6,800₮</span>
+                    </p>
+                  </div>
+                </div>
+              </div></a
+            >
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="foodModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content" id="modal">
+                <div class="modal-body w-100 p-5">
+                  <div class="d-flex w-auto">
+                    <div class="col-6">
+                      <img src="./pics/modal-pic.svg" alt="" />
+                    </div>
+                    <div class="col-6">
+                      <div class="d-flex justify-content-between">
+                        <span class="food-name"> Хулууны зутан </span>
+                        <span class="food-price"> 6,800₮ </span>
+                      </div>
+                      <hr />
+                      <div class="food-modal-info">
+                        <span> Орц </span>
+                        <p>
+                          Хулуу, төмс, лууван , сонгино, цөцгийн тос, самрын үр
+                        </p>
+                        <div class="d-flex flex-column">
+                          <span> Тоо </span>
+                          <div class="d-flex mt-2">
+                            <img src="./pics/minus-icon.svg" alt="" />
+                            <img src="./pics/1.svg" alt="" />
+                            <img src="./pics/plus-icon.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <button class="basket-button">Сагслах</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="card card d-none d-md-block" style="width: 18rem">
-            <img
-              class="card-img-top"
-              src="./pics/menu-food/food11.svg"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Авокадо салад</h5>
-              <p class="card-text">
-                <span class="saled">6,800₮</span>
-              </p>
+          <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#foodModal"
+          >
+            <a href="#">
+              <div class="card1">
+                <div class="hovver">
+                  <img src="./pics/icon/basket-hover.svg" alt="" />
+                </div>
+
+                <div class="card" style="width: 18rem">
+                  <div class="d-flex flex-row-reverse">
+                    <img
+                      class="card-img-top"
+                      src="./pics/menu-food/food11.svg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title d-flex justify-content-start ms-0">
+                      Авокадо салад
+                    </h5>
+                    <p class="card-text d-flex">
+                      <span class="saled">6,800₮</span>
+                    </p>
+                  </div>
+                </div>
+              </div></a
+            >
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="foodModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content" id="modal">
+                <div class="modal-body w-100 p-5">
+                  <div class="d-flex w-auto">
+                    <div class="col-6">
+                      <img src="./pics/modal-pic.svg" alt="" />
+                    </div>
+                    <div class="col-6">
+                      <div class="d-flex justify-content-between">
+                        <span class="food-name"> Хулууны зутан </span>
+                        <span class="food-price"> 6,800₮ </span>
+                      </div>
+                      <hr />
+                      <div class="food-modal-info">
+                        <span> Орц </span>
+                        <p>
+                          Хулуу, төмс, лууван , сонгино, цөцгийн тос, самрын үр
+                        </p>
+                        <div class="d-flex flex-column">
+                          <span> Тоо </span>
+                          <div class="d-flex mt-2">
+                            <img src="./pics/minus-icon.svg" alt="" />
+                            <img src="./pics/1.svg" alt="" />
+                            <img src="./pics/plus-icon.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <button class="basket-button">Сагслах</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="card card d-none d-md-block" style="width: 18rem">
-            <img
-              class="card-img-top"
-              src="./pics/menu-food/food12.svg"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Сендвич</h5>
-              <p class="card-text">
-                <span class="saled">4,800₮</span>
-              </p>
+          <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#foodModal"
+          >
+            <a href="#">
+              <div class="card1">
+                <div class="hovver">
+                  <img src="./pics/icon/basket-hover.svg" alt="" />
+                </div>
+
+                <div class="card" style="width: 18rem">
+                  <div class="d-flex flex-row-reverse">
+                    <img
+                      class="card-img-top"
+                      src="./pics/menu-food/food12.svg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title d-flex justify-content-start ms-0">
+                      Сендвич
+                    </h5>
+                    <p class="card-text d-flex">
+                      <span class="saled">4,800₮</span>
+                    </p>
+                  </div>
+                </div>
+              </div></a
+            >
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="foodModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content" id="modal">
+                <div class="modal-body w-100 p-5">
+                  <div class="d-flex w-auto">
+                    <div class="col-6">
+                      <img src="./pics/modal-pic.svg" alt="" />
+                    </div>
+                    <div class="col-6">
+                      <div class="d-flex justify-content-between">
+                        <span class="food-name"> Хулууны зутан </span>
+                        <span class="food-price"> 6,800₮ </span>
+                      </div>
+                      <hr />
+                      <div class="food-modal-info">
+                        <span> Орц </span>
+                        <p>
+                          Хулуу, төмс, лууван , сонгино, цөцгийн тос, самрын үр
+                        </p>
+                        <div class="d-flex flex-column">
+                          <span> Тоо </span>
+                          <div class="d-flex mt-2">
+                            <img src="./pics/minus-icon.svg" alt="" />
+                            <img src="./pics/1.svg" alt="" />
+                            <img src="./pics/plus-icon.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <button class="basket-button">Сагслах</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="menu-list desert">
-        <div class="menu-line d-flex justify-content-between mb-2">
-          <div class="menu-title"><span> Амттан</span></div>
-          <div class="me-5 see-more">
-            Бүгдийг харах
+        <div class="d-block">
+          <div class="menu-line d-flex justify-content-between mb-2">
+            <div class="menu-title"><span> Амттан</span></div>
+            <div class="me-5 d-flex see-more">
+              <a href="./projects/menu.html">
+                <span class="ms-3"> Бүгдийг харах </span>
+                <img
+                  src="./pics/icon/right-arrow.svg"
+                  alt=""
+                  class="arrow ms-3"
+                />
+              </a>
+            </div>
           </div>
         </div>
         <div class="menu d-flex justify-content-around">
-          <div class="card" style="width: 18rem">
-            <img
-              class="card-img-top"
-              src="./pics/menu-food/food13.svg"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Донатс</h5>
-              <p class="card-text">
-                <span class="saled">5,800₮</span>
-              </p>
+          <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#foodModal"
+          >
+            <a href="#">
+              <div class="card1">
+                <div class="hovver">
+                  <img src="./pics/icon/basket-hover.svg" alt="" />
+                </div>
+
+                <div class="card" style="width: 18rem">
+                  <div class="d-flex flex-row-reverse">
+                    <img
+                      class="card-img-top"
+                      src="./pics/menu-food/food13.svg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title d-flex justify-content-start ms-0">
+                      Донатс
+                    </h5>
+                    <p class="card-text d-flex">
+                      <span class="saled">5,800₮</span>
+                    </p>
+                  </div>
+                </div>
+              </div></a
+            >
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="foodModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content" id="modal">
+                <div class="modal-body w-100 p-5">
+                  <div class="d-flex w-auto">
+                    <div class="col-6">
+                      <img src="./pics/modal-pic.svg" alt="" />
+                    </div>
+                    <div class="col-6">
+                      <div class="d-flex justify-content-between">
+                        <span class="food-name"> Хулууны зутан </span>
+                        <span class="food-price"> 6,800₮ </span>
+                      </div>
+                      <hr />
+                      <div class="food-modal-info">
+                        <span> Орц </span>
+                        <p>
+                          Хулуу, төмс, лууван , сонгино, цөцгийн тос, самрын үр
+                        </p>
+                        <div class="d-flex flex-column">
+                          <span> Тоо </span>
+                          <div class="d-flex mt-2">
+                            <img src="./pics/minus-icon.svg" alt="" />
+                            <img src="./pics/1.svg" alt="" />
+                            <img src="./pics/plus-icon.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <button class="basket-button">Сагслах</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="card" style="width: 18rem">
-            <img
-              class="card-img-top"
-              src="./pics/menu-food/food14.svg"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Орео дессерт</h5>
-              <p class="card-text">
-                <span class="saled">7,800₮</span>
-              </p>
+          <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#foodModal"
+          >
+            <a href="#">
+              <div class="card1">
+                <div class="hovver">
+                  <img src="./pics/icon/basket-hover.svg" alt="" />
+                </div>
+
+                <div class="card" style="width: 18rem">
+                  <div class="d-flex flex-row-reverse">
+                    <img
+                      class="card-img-top"
+                      src="./pics/menu-food/food14.svg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title d-flex justify-content-start ms-0">
+                      Орео дессерт
+                    </h5>
+                    <p class="card-text d-flex">
+                      <span class="saled">7,800₮</span>
+                    </p>
+                  </div>
+                </div>
+              </div></a
+            >
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="foodModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content" id="modal">
+                <div class="modal-body w-100 p-5">
+                  <div class="d-flex w-auto">
+                    <div class="col-6">
+                      <img src="./pics/modal-pic.svg" alt="" />
+                    </div>
+                    <div class="col-6">
+                      <div class="d-flex justify-content-between">
+                        <span class="food-name"> Хулууны зутан </span>
+                        <span class="food-price"> 6,800₮ </span>
+                      </div>
+                      <hr />
+                      <div class="food-modal-info">
+                        <span> Орц </span>
+                        <p>
+                          Хулуу, төмс, лууван , сонгино, цөцгийн тос, самрын үр
+                        </p>
+                        <div class="d-flex flex-column">
+                          <span> Тоо </span>
+                          <div class="d-flex mt-2">
+                            <img src="./pics/minus-icon.svg" alt="" />
+                            <img src="./pics/1.svg" alt="" />
+                            <img src="./pics/plus-icon.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <button class="basket-button">Сагслах</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="card d-none d-md-block" style="width: 18rem">
-            <img
-              class="card-img-top"
-              src="./pics/menu-food/food15.svg"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Вафли</h5>
-              <p class="card-text">
-                <span class="saled">5,800₮</span>
-              </p>
+          <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#foodModal"
+          >
+            <a href="#">
+              <div class="card1">
+                <div class="hovver">
+                  <img src="./pics/icon/basket-hover.svg" alt="" />
+                </div>
+
+                <div class="card" style="width: 18rem">
+                  <div class="d-flex flex-row-reverse">
+                    <img
+                      class="card-img-top"
+                      src="./pics/menu-food/food15.svg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title d-flex justify-content-start ms-0">
+                      Вафли
+                    </h5>
+                    <p class="card-text d-flex">
+                      <span class="saled">5,800₮</span>
+                    </p>
+                  </div>
+                </div>
+              </div></a
+            >
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="foodModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content" id="modal">
+                <div class="modal-body w-100 p-5">
+                  <div class="d-flex w-auto">
+                    <div class="col-6">
+                      <img src="./pics/modal-pic.svg" alt="" />
+                    </div>
+                    <div class="col-6">
+                      <div class="d-flex justify-content-between">
+                        <span class="food-name"> Хулууны зутан </span>
+                        <span class="food-price"> 6,800₮ </span>
+                      </div>
+                      <hr />
+                      <div class="food-modal-info">
+                        <span> Орц </span>
+                        <p>
+                          Хулуу, төмс, лууван , сонгино, цөцгийн тос, самрын үр
+                        </p>
+                        <div class="d-flex flex-column">
+                          <span> Тоо </span>
+                          <div class="d-flex mt-2">
+                            <img src="./pics/minus-icon.svg" alt="" />
+                            <img src="./pics/1.svg" alt="" />
+                            <img src="./pics/plus-icon.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <button class="basket-button">Сагслах</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="card d-none d-md-block" style="width: 18rem">
-            <img
-              class="card-img-top"
-              src="./pics/menu-food/food16.svg"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Макарон</h5>
-              <p class="card-text">
-                <span class="saled">3,800₮</span>
-              </p>
+          <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#foodModal"
+          >
+            <a href="#">
+              <div class="card1">
+                <div class="hovver">
+                  <img src="./pics/icon/basket-hover.svg" alt="" />
+                </div>
+
+                <div class="card" style="width: 18rem">
+                  <div class="d-flex flex-row-reverse">
+                    <img
+                      class="card-img-top"
+                      src="./pics/menu-food/food16.svg"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title d-flex justify-content-start ms-0">
+                      Макарон
+                    </h5>
+                    <p class="card-text d-flex">
+                      <span class="saled">3,800₮</span>
+                    </p>
+                  </div>
+                </div>
+              </div></a
+            >
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="foodModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content" id="modal">
+                <div class="modal-body w-100 p-5">
+                  <div class="d-flex w-auto">
+                    <div class="col-6">
+                      <img src="./pics/modal-pic.svg" alt="" />
+                    </div>
+                    <div class="col-6">
+                      <div class="d-flex justify-content-between">
+                        <span class="food-name"> Хулууны зутан </span>
+                        <span class="food-price"> 6,800₮ </span>
+                      </div>
+                      <hr />
+                      <div class="food-modal-info">
+                        <span> Орц </span>
+                        <p>
+                          Хулуу, төмс, лууван , сонгино, цөцгийн тос, самрын үр
+                        </p>
+                        <div class="d-flex flex-column">
+                          <span> Тоо </span>
+                          <div class="d-flex mt-2">
+                            <img src="./pics/minus-icon.svg" alt="" />
+                            <img src="./pics/1.svg" alt="" />
+                            <img src="./pics/plus-icon.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <button class="basket-button">Сагслах</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

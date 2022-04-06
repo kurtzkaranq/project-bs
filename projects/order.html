@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/banner.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/signUp.css" />
+    <link rel="stylesheet" href="../css/forgot-pass.css" />
+    <link rel="stylesheet" href="../css/main-page.css" />
+    <link rel="stylesheet" href="../css/order.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Menu</title>
+  </head>
+  <body>
+    <header class="container-md pt-2 d-flex-wrap">
+      <div class="row d-md-flex justify-content-md-start">
+        <div class="col-4 logo justify-content-center order-1 order-md-0">
+          <div class="d-flex w-50 justify-content-center">
+            <img src="../pics/logo.svg" alt="" />
+            <h2 class="col-12">Food Delivery</h2>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="menu d-flex order-2 order-md-3">
+            <div class="dropdown show d-inline d-md-none ms-0">
+              <a
+                class="btn dropdown-toggle"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img src="../pics/header/more.svg" alt="" />
+              </a>
+            </div>
+            <!-- ---------------------- -->
+            <ul class="d-flex d-none d-md-flex menuList col-12">
+              <li>
+                <a href="#" class="bolded">НҮҮР</a>
+              </li>
+              <li>
+                <a href="#">ХООЛНЫ ЦЭС</a>
+              </li>
+              <li>
+                <a href="#">ХҮРГЭЛТИЙН БҮС</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-2 order-3 mt-3">
+          <div class="searchBar d-flex d-none d-lg-flex">
+            <div class="searchSection d-none d-md-inline">
+              <input type="text" value="" placeholder="Хайх" />
+            </div>
+          </div>
+        </div>
+        <div class="col order-4 ms-2">
+          <div class="login-basket">
+            <ul class="d-lg-flex loginList d-none">
+              <li class="">
+                <a
+                  class="btn"
+                  data-bs-toggle="offcanvas"
+                  href="#offcanvasRight"
+                  role="button"
+                  aria-controls="offcanvasExample"
+                >
+                  <img src="../pics/header/bucket.svg" alt="" />
+                  Сагс
+                </a>
+
+                <div
+                  class="offcanvas offcanvas-end"
+                  tabindex="-1"
+                  id="offcanvasRight"
+                  aria-labelledby="offcanvasRightLabel"
+                >
+                  <div class="offcanvas-header">
+                    <h5
+                      id="offcanvasRightLabel"
+                      class="text-center justify-content-center"
+                    >
+                      Таны сагс
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close text-reset"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <img
+                      src="../pics/basket-pic.svg"
+                      alt=""
+                      class="align-items-center"
+                    />
+                  </div>
+                </div>
+              </li>
+              <li>
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <a href="#">
+                    <img src="../pics/header/user.svg" alt="" />
+                    Нэвтрэх</a
+                  >
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body mt-2 me-2 pe-4">
+                        <div class="d-flex justify-content-between mb-2">
+                          <div class="modal-title">
+                            <h5 class="" id="exampleModalLabel">Нэвтрэх</h5>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div>
+                          <div class="d-flex flex-column mt-2">
+                            И-мэйл
+                            <input
+                              type="email"
+                              name=""
+                              id=""
+                              placeholder="И-мэйл хаягаа оруулна уу.  "
+                            />
+                          </div>
+                          <div class="d-flex flex-column mt-2">
+                            Нууц үг
+                            <input
+                              type="password"
+                              name=""
+                              id=""
+                              placeholder="Нууц үгээ оруулна уу."
+                            />
+                          </div>
+                          <div>
+                            <a href="#" class="d-flex justify-content-end mt-2"
+                              >Нууц үгээ мартсан?</a
+                            >
+                          </div>
+                        </div>
+                        <div class="d-flex flex-column mt-3">
+                          <button
+                            type="button"
+                            class="btn foot-btn-1"
+                            data-bs-dismiss="modal"
+                          >
+                            Нэвтрэх
+                          </button>
+                          <div class="text-center">
+                            <a
+                              href="#"
+                              class="justify-content-center text-center"
+                              >эсвэл</a
+                            >
+                          </div>
+                          <button type="button " class="btn foot-btn-2">
+                            Бүртгүүлэх
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="d-flex d-lg-none mBar mt-2 mt-md-3">
+              <div class="searchIcon me-3">
+                <a href="#">
+                  <img src="../pics/header/search-icon.svg" alt="" />
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <img src="../pics/header/userIcon.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container-md">
+      <div class="row">
+        <div class="col-6">
+          <div class="mb-5">Хаягийн мэдээлэл оруулах</div>
+          <div class="ps-3 pt-3 address">
+            <div class="">
+              Хаягаа оруулна уу.
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                aria-placeholder="Дүүрэг сонгоно уу."
+              >
+                <option value="1">Дүүрэг сонгоно уу.</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                aria-placeholder="Хороо сонгоно уу."
+              >
+                <option value="1">Хороо сонгоно уу.</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                aria-placeholder="Байр, гудамж сонгоно уу."
+              >
+                <option value="1">Байр, гудамж сонгоно уу.</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="d-flex flex-column pt-3">
+              Нэмэлт мэдээлэл
+              <input
+                type="text"
+                name=""
+                id="addition"
+                placeholder="Орц, давхар, орцны код....."
+              />
+            </div>
+            <div class="d-flex flex-column pt-2">
+              Утасны дугаар*
+              <input
+                type="number"
+                name=""
+                id=""
+                placeholder="Утасны дугаараа оруулна уу."
+              />
+            </div>
+            <div class="d-flex flex-column pt-3">
+              Төлбөр төлөх сонголт
+              <div class="d-flex justify-content-between">
+                <input type="radio" class="radio justify-content-start" />
+                Бэлнээр <input type="radio" class="radio" /> Картаар
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6"></div>
+      </div>
+    </main>
+    <footer class="w-fluid mt-4">
+      <div class="container-sm p-2">
+        <div class="info d-flex flex-column flex-md-row">
+          <!-- FOOD DELIVERY / HOME LOGO -->
+          <div class="title d-flex w-25">
+            <img src="../pics/footer/footer-logo.svg" class="logo" alt="" />
+            <h2 id="footerTitle" class="ms-2 col-12">Food Delivery</h2>
+          </div>
+          <!-- FOOTER MENU -->
+          <div class="d-flex justify-content-between ms-0">
+            <div class="footerMenu">
+              <ul>
+                <li><a href="#">Нүүр</a></li>
+                <li><a href="#">Хоолны цэс</a></li>
+                <li>
+                  <a href="../project/deliveryZone.html">Хүргэлтийн бүс</a>
+                </li>
+              </ul>
+            </div>
+            <!-- CONTACT -->
+            <div class="contact">
+              <ul>
+                <li><a href="#">Холбоо барих</a></li>
+                <li>(976) 123456789</li>
+                <li>(976) 987654321</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="justify-content-center d-md-none mSocial">
+          <div class="img d-flex ms-2">
+            <a href="#" class="ms-2"
+              ><img src="../pics/footer/social logos/facebook.png" alt="" />
+            </a>
+            <a href="#" class="ms-2">
+              <img src="../pics/footer/social logos/instagram.png" alt="" />
+            </a>
+            <a href="#" class="ms-2">
+              <img src="../pics/footer/social logos/twitter.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <hr />
+        <div class="bottom d-flex">
+          <div class="social d-flex-column d-none d-md-inline">
+            Бидэнтэй нэгдээрэй
+            <div class="img d-flex ms-2">
+              <a href="#" class="ms-2"
+                ><img src="../pics/footer/social logos/facebook.png" alt="" />
+              </a>
+              <a href="#" class="ms-2">
+                <img src="../pics/footer/social logos/instagram.png" alt="" />
+              </a>
+              <a href="#" class="ms-2">
+                <img src="../pics/footer/social logos/twitter.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <!-- copyright etc. -->
+          <div class="last d-flex flex-column flex-md-row m-0">
+            <div class="footer-list">
+              <a href="#" class="mb-2">Үйлчилгээний нөхцөл</a>
+              <a href="#" class="mb-2">Нууцлалын бодлого</a>
+            </div>
+            <div class="copyright">
+              © 2020 MStars Foods LLC
+              <br />
+              <span class="d-none d-md-inline">
+                Зохиогчийн эрх хуулиар хамгаалагдсан.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
