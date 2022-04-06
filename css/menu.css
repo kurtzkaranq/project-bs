@@ -150,11 +150,19 @@ a h5 {
   text-align: right;
   color: #f17228;
 }
-.modal-dialog {
+#foodModal .modal-dialog {
   margin-top: 10%;
   margin-left: 25%;
 }
+.modal-food-info{
+  padding-left: 5%;
+}
+.food-list{
+  width: 18rem;
+  margin-right: 5%;
+}
 @media (max-width: 1000px) {
+ 
   .card-title {
     font-size: 15px;
   }

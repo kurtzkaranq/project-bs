@@ -1,6 +1,6 @@
 main {
   padding-top: 5%;
-  height: 90%;
+  height: 200vh;
 }
 .foodTypes ul {
   display: flex;
