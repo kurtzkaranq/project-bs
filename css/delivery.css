@@ -1,0 +1,34 @@
+.map {
+  /* margin-left: auto; */
+  margin-top: 0%;
+  text-align: center;
+  /* width: 100px; */
+}
+.location {
+  display: flex;
+  justify-content: space-between;
+}
+
+.loginTitle {
+  position: relative;
+  width: 251px;
+  height: 30px;
+  margin: 10%;
+  left: 20px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+
+  /* display: flex; */
+  /* align-items: center; */
+
+  color: #171717;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 10px;
+}
