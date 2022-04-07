@@ -1,6 +1,8 @@
 .menu-list {
   margin-top: 10%;
   margin-left: auto;
+  margin-right: auto;
+  /* width: 80%; */
 }
 
 .menu-title {
@@ -32,7 +34,7 @@
   padding: 4%;
 }
 .hovver {
-  width: 18rem;
+  width: 10vw;
   height: 21rem;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.381);
@@ -53,8 +55,10 @@
 .hovver a :hover {
   color: black;
 }
+.card {
+  width: 10vw;
+}
 .card1 {
-  width: 18rem;
   height: 21rem;
 }
 .card1 a {
@@ -154,15 +158,20 @@ a h5 {
   margin-top: 10%;
   margin-left: 25%;
 }
-.modal-food-info{
+.modal-food-info {
   padding-left: 5%;
 }
-.food-list{
-  width: 18rem;
+.food-list {
+  width: 18vw;
   margin-right: 5%;
 }
+.d-md-flex {
+  margin-right: 0%;
+}
+.me-5 {
+  margin-right: 0%;
+}
 @media (max-width: 1000px) {
- 
   .card-title {
     font-size: 15px;
   }
@@ -171,5 +180,29 @@ a h5 {
   }
   .declined {
     margin-top: 2%;
+  }
+  .hovver {
+    width: 20vw;
+  }
+  .food-list {
+    width: 20vw;
+    margin-right: 2%;
+  }
+  .menu-list {
+    margin-top: 0%;
+  }
+}
+@media (max-width: 770px) {
+  .menu-list {
+    margin-top: 0%;
+  }
+  .card1 {
+    width: 40vw;
+  }
+  .food-list {
+    width: 40vw;
+  }
+  .hovver {
+    width: 40vw;
   }
 }
