@@ -76,7 +76,9 @@
   color: #f17228;
 }
 .declined {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 200;
+  color: black;
 
   margin-left: 7%;
   text-decoration: line-through;
@@ -184,10 +186,11 @@ a h5 {
     margin-top: 2%;
   }
   .hovver {
-    width: 20vw;
+    width: 100%;
+    height: 150%;
   }
   .food-list {
-    width: 20vw;
+    width: 100vw;
     margin-right: 2%;
   }
   .menu-list {

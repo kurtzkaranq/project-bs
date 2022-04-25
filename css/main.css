@@ -110,4 +110,21 @@ a {
   .features p {
     font-size: 13px;
   }
+  .see-more {
+    width: 25%;
+    background-color: white;
+  }
+  .see-more span {
+    display: none;
+  }
+  .arrow {
+    margin-left: 50%;
+    color: #f17228;
+    text-align: center;
+  }
+  .arrow-2 {
+    /* margin-bottom: 100%; */
+    transform: rotate(180deg);
+    /* padding-top: 100%; */
+  }
 }
