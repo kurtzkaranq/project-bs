@@ -1,0 +1,43 @@
+ <div
+                class="modal fade"
+                id="foodModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content" id="modal">
+                    <div class="modal-body w-100 p-5">
+                      <div class="d-flex w-auto">
+                        <div class="col-6">
+                          <img src="./pics/modal-pic.svg" alt="" />
+                        </div>
+                        <div class="col-6 modal-food-info">
+                          <div class="d-flex justify-content-between">
+                            <span class="food-name"> Хулууны зутан </span>
+                            <span class="food-price"> 6,800₮ </span>
+                          </div>
+                          <hr />
+                          <div class="food-modal-info">
+                            <span> Орц </span>
+                            <p>
+                              Хулуу, төмс, лууван , сонгино, цөцгийн тос, самрын
+                              үр
+                            </p>
+                            <div class="d-flex flex-column">
+                              <span> Тоо </span>
+                              <div class="d-flex mt-2">
+                                <img src="./pics/minus-icon.svg" alt="" />
+                                <img src="./pics/1.svg" alt="" />
+                                <img src="./pics/plus-icon.svg" alt="" />
+                              </div>
+                            </div>
+                          </div>
+                          <button class="basket-button">Сагслах</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>

@@ -5,6 +5,7 @@ const food = [
     img: "./pics/menu-food/food1.svg",
     discount: 20,
     discount_price: "6,800₮",
+    category: "discount",
   },
   {
     name: "Панкейк",
@@ -12,6 +13,7 @@ const food = [
     img: "./pics/menu-food/food2.svg",
     discount: 20,
     discount_price: "6,800₮",
+    category: "discount",
   },
   {
     name: "Өглөөний хоол",
@@ -19,6 +21,7 @@ const food = [
     img: "./pics/menu-food/food3.svg",
     discount: 20,
     discount_price: "6,800₮",
+    category: "discount",
   },
   {
     name: "Банана сендвич",
@@ -26,6 +29,7 @@ const food = [
     img: "./pics/menu-food/food4.svg",
     discount: 20,
     discount_price: "6,800₮",
+    category: "discount",
   },
   {
     name: " Салмон загас",
@@ -33,6 +37,7 @@ const food = [
     img: "./pics/menu-food/food5.svg",
     discount: 0,
     discount_price: " ",
+    category: "main",
   },
   {
     name: " Бөөрөнхий мах",
@@ -40,6 +45,7 @@ const food = [
     img: "./pics/menu-food/food6.svg",
     discount: 0,
     discount_price: " ",
+    category: "main",
   },
   {
     name: "Самрын нухаш",
@@ -47,6 +53,7 @@ const food = [
     img: "./pics/menu-food/food7.svg",
     discount: 0,
     discount_price: " ",
+    category: "main",
   },
   {
     name: " Чикен бургер",
@@ -54,6 +61,7 @@ const food = [
     img: "./pics/menu-food/food8.svg",
     discount: 0,
     discount_price: " ",
+    category: "main",
   },
   {
     name: "Детокс салад",
@@ -61,6 +69,7 @@ const food = [
     img: "./pics/menu-food/food9.svg",
     discount: 0,
     discount_price: " ",
+    category: "salad",
   },
   {
     name: "Кобб салад",
@@ -68,6 +77,7 @@ const food = [
     img: "./pics/menu-food/food10.svg",
     discount: 0,
     discount_price: " ",
+    category: "salad",
   },
   {
     name: "Авокадо салад",
@@ -75,6 +85,7 @@ const food = [
     img: "./pics/menu-food/food11.svg",
     discount: 0,
     discount_price: " ",
+    category: "salad",
   },
   {
     name: "Сендвич",
@@ -82,6 +93,7 @@ const food = [
     img: "./pics/menu-food/food12.svg",
     discount: 0,
     discount_price: " ",
+    category: "salad",
   },
   {
     name: "Донатс",
@@ -89,6 +101,7 @@ const food = [
     img: "./pics/menu-food/food13.svg",
     discount: 0,
     discount_price: " ",
+    category: "desert",
   },
   {
     name: " Орео дессерт",
@@ -96,6 +109,7 @@ const food = [
     img: "./pics/menu-food/food14.svg",
     discount: 0,
     discount_price: " ",
+    category: "desert",
   },
   {
     name: "Вафли",
@@ -103,6 +117,7 @@ const food = [
     img: "./pics/menu-food/food15.svg",
     discount: 0,
     discount_price: " ",
+    category: "desert",
   },
   {
     name: "Макарон",
@@ -110,22 +125,50 @@ const food = [
     img: "./pics/menu-food/food16.svg",
     discount: 0,
     discount_price: " ",
+    category: "desert",
   },
 ];
-let foodName = document.querySelectorAll(".card-title");
-let foodPrice = document.querySelectorAll(".saled");
-let foodDiscount = document.querySelectorAll(".declined");
-let foodPic = document.querySelectorAll(".foodPicture");
-for (let i = 0; i < food.length; i++) {
-  foodName[i].innerHTML += food[i].name;
-  foodPrice[
-    i
-  ].innerHTML += `${food[i].price} <span class ='declined'>${food[i].discount_price}</span>`;
-  //   foodimg = food[i].img;
-  //   food_main_price[i] = ;
-  foodPic[i].innerHTML += `<img
-  class="card-img-top"
-  src="${food[i].img}"
-  alt="Card image cap"
-/>`;
-}
+const discountDish = food.filter((dish) => dish.category == "discount");
+const mainDish = food.filter((dish) => dish.category == "main");
+const salad = food.filter((dish) => dish.category == "salad");
+const desert = food.filter((dish) => dish.category == "desert");
+
+const createFood = (arr, container) => {
+  let html = document.querySelector(container);
+  for (let i = 0; i < arr.length; i++) {
+    let foodInfo = `
+  <a href="#" class = 'col pe-2'>
+    <div class="card1">
+      <div class="hovver">
+      </div>
+      
+      <div class="card">
+      <div class="d-flex flex-row-reverse foodPicture">
+      <img src="${arr[i].img}" alt="" />
+        
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h5
+            class="card-title d-flex justify-content-start ms-0"
+          >${arr[i].name}</h5>
+          <p class="card-text d-flex">
+            <span class="saled">${arr[i].price}</span>
+          </p>
+        </div>
+      </div></div
+  ></a>
+`;
+    // if (arr[i].discount > 0) {
+    //   const discountPer = (arr[i].price * (100 - discount)) / 100;
+    //   document.querySelector(
+    //     ".card-text"
+    //   ).innerHTML += `<span class = 'declined'> ${discountPer}</span>`;
+    // }
+    html.innerHTML += foodInfo;
+  }
+};
+
+createFood(discountDish, "#discoundDish");
+createFood(mainDish, "#mainDish");
+createFood(salad, "#salad");
+createFood(desert, "#desert");

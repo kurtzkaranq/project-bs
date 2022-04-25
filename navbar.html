@@ -1,0 +1,191 @@
+<header class="container-md pt-2 d-flex-wrap">
+  <div class="row d-md-flex justify-content-md-start">
+    <div class="col-4 logo justify-content-center order-1 order-md-0">
+      <div class="d-flex w-50 justify-content-center">
+        <img src="./pics/logo.svg" alt="" />
+        <h2 class="col-12">Food Delivery</h2>
+      </div>
+    </div>
+    <div class="col-5">
+      <div class="menu d-flex order-2 order-md-3">
+        <div class="dropdown show d-inline d-md-none ms-0">
+          <a
+            class="btn dropdown-toggle"
+            href="#"
+            role="button"
+            id="dropdownMenuLink"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <img src="./pics/header/more.svg" alt="" />
+          </a>
+        </div>
+        <!-- ---------------------- -->
+        <ul class="d-flex d-none d-md-flex menuList w-100">
+          <li>
+            <a href="#" class="bolded">НҮҮР</a>
+          </li>
+          <li>
+            <a href="./projects/menu.html">ХООЛНЫ ЦЭС</a>
+          </li>
+          <li>
+            <a href="#">ХҮРГЭЛТИЙН БҮС</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-2 order-3 mt-3">
+      <div class="searchBar d-flex d-none d-lg-flex">
+        <div class="searchSection d-none d-md-inline">
+          <input type="text" value="" placeholder="Хайх" />
+        </div>
+      </div>
+    </div>
+    <div class="col order-4 ms-2">
+      <div class="login-basket">
+        <ul class="d-lg-flex loginList d-none">
+          <li class="">
+            <a
+              class="btn"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasRight"
+              role="button"
+              aria-controls="offcanvasExample"
+            >
+              <img src="./pics/header/bucket.svg" alt="" />
+              Сагс
+            </a>
+
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel"
+            >
+              <div class="offcanvas-header">
+                <h5
+                  id="offcanvasRightLabel"
+                  class="text-center justify-content-center"
+                >
+                  Таны сагс
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <img
+                  src="./pics/basket-pic.svg"
+                  alt=""
+                  class="align-items-center"
+                />
+              </div>
+            </div>
+          </li>
+          <li>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <a href="#">
+                <img src="./pics/header/user.svg" alt="" />
+                Нэвтрэх</a
+              >
+            </button>
+
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog dialog">
+                <div class="modal-content head-modal">
+                  <div class="modal-body head-modal-body mt-2 me-2 pe-4">
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="modal-title">
+                        <h5 class="" id="exampleModalLabel">Нэвтрэх</h5>
+                      </div>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div>
+                      <div class="d-flex flex-column mt-2">
+                        И-мэйл
+                        <input
+                          type="email"
+                          name=""
+                          id=""
+                          placeholder="И-мэйл хаягаа оруулна уу.  "
+                        />
+                      </div>
+                      <div class="d-flex flex-column mt-2">
+                        Нууц үг
+                        <input
+                          type="password"
+                          name=""
+                          id=""
+                          placeholder="Нууц үгээ оруулна уу."
+                        />
+                      </div>
+                      <div>
+                        <a
+                          href="./projects/forgotPassword.html"
+                          class="d-flex justify-content-end mt-2"
+                          >Нууц үгээ мартсан?</a
+                        >
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column mt-3">
+                      <button
+                        type="button"
+                        class="btn foot-btn-1"
+                        data-bs-dismiss="modal"
+                      >
+                        Нэвтрэх
+                      </button>
+                      <div class="text-center">
+                        <a href="#" class="justify-content-center text-center"
+                          >эсвэл</a
+                        >
+                      </div>
+
+                      <button type="button " class="btn foot-btn-2">
+                        Бүртгүүлэх
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="d-flex d-lg-none mBar mt-2 mt-md-3">
+          <div class="searchIcon me-3">
+            <a href="#">
+              <img src="./pics/header/search-icon.svg" alt="" />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img src="./pics/header/userIcon.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
