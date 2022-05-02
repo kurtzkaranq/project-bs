@@ -1,6 +1,7 @@
 .logo {
-  width: 15%;
-  margin-left: 5%;
+  width: 10%;
+  margin-right: 0%;
+  margin-left: 7%;
   margin-top: 1%;
 }
 .logo h2 {
@@ -22,12 +23,19 @@ header a {
 .menuList {
   list-style-type: none;
   /* margin-top: 10px; */
-  align-items: center;
-  width: 50vw;
+  /* align-items: center; */
+  width: 100%;
+  margin-right: 0%;
+  margin-left: 20%;
+  margin-right: 10%;
+  /* justify-content: center; */
 }
 .menuList li {
-  margin-left: 3%;
-  margin-top: 2vh;
+  /* width: %; */
+  margin-right: 5%;
+  /* margin-left: 3%; */
+  margin-top: 4%;
+  /* margin-bottom: auto; */
   align-items: center;
 }
 .menuList li a {
@@ -43,12 +51,15 @@ header a {
 }
 .loginList {
   list-style-type: none;
+  margin-left: 20%;
+  /* display:; */
 }
 .loginList li {
-  margin-left: 3%;
-  margin-top: 6%;
+  /* margin-left: 3%; */
+  margin-top: 4%;
 }
 .loginList li a {
+  /* font-size: 10px; */
   margin-left: auto;
   color: #f17228;
   text-decoration: none;
@@ -61,21 +72,18 @@ header a {
 }
 .searchBar input {
   /* search */
+  margin-left: 0%;
+  /* width: 15vw; */
   padding-left: 25px;
   background: url(../pics/header/search.svg);
   background-repeat: no-repeat;
   background-position: 4% 50%;
 
-  background-size: 15px;
-  position: relative;
-  /* width: 15vw; */
-  height: 32px;
-  margin-right: 5%;
-
   border: 1px solid #fbc5a6;
   box-sizing: border-box;
   border-radius: 10px;
 }
+
 input {
   border: none;
   width: 235px;
@@ -83,4 +91,9 @@ input {
 }
 .mBar img {
   width: 25px;
+}
+@media (max-width: 1200px) {
+  .menuList {
+    margin: 0;
+  }
 }

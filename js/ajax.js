@@ -1,7 +1,7 @@
 const xhr = new XMLHttpRequest();
 
 xhr.onreadystatechange = function () {
-  console.log(this.responseText);
+  // console.log(this.responseText);
   const navbar = document.querySelector("#navbar");
   navbar.innerHTML = this.responseText;
 };
